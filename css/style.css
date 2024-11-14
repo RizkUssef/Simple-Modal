@@ -1,3 +1,22 @@
+.bg{
+    background-image: url("../imgs/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.bg .layer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+
+}
 .img-container{
     width: 100%;
     height: 60vh;
@@ -5,7 +24,6 @@
 .position-relative{
     width: 30%;
     border-radius: 18px;
-
 }
 .img-container img{
     width: 100%;
@@ -15,9 +33,49 @@
     border-radius: 18px;
 
 }
-.position-absolute{
+.container .position-absolute{
     bottom: 20px;
     left: 20px;
     right: 20px;
     border-radius: 25px;
+}
+.bg .modal-img{
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+.bg .modal-img .modal-img-size{
+    width:50%;
+    height: 80%;
+}
+.bg .modal-img .modal-img-size img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: none;
+    border-radius: 18px;
+}
+.bg .modal-img .modal-img-size .cancel{
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+}
+.bg .modal-img .modal-img-size .next{
+    /* top:; */
+    right: 10px;
+    font-size: 25px;
+    /* opacity: 0.5; */
+}
+.bg .modal-img .modal-img-size .prev{
+    left: 10px;
+    font-size: 25px;
+    /* opacity: 0.5; */
 }

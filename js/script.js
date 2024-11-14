@@ -10,13 +10,6 @@ openModal();
 closeModal();
 nextImg();
 prevImg();
-document.addEventListener("keydown",function (e){
-    console.log(e.key);
-    // if(e.key == ""){
-
-    // }
-    
-})
 function openModal(){
     for (let i = 0; i < imgs.length; i++) {
         let src = imgs[i].getAttribute("src");
@@ -26,7 +19,7 @@ function openModal(){
             index=i;
         });
     }
-};
+}
 function closeModal() {
     close.addEventListener("click", function() {
         hideModal();
@@ -43,7 +36,6 @@ function closeModal() {
         }
     })
 }
-
 function nextImg(){
     function handle(){
         index++;
